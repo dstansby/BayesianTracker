@@ -28,6 +28,9 @@ from . import constants, utils
 from .optimise.hypothesis import H_TYPES, PyHypothesisParams
 
 
+__all__ = ['MotionModel', 'ObjectModel', 'HypothesisModel']
+
+
 @dataclasses.dataclass
 class MotionModel:
     """The `btrack` motion model.

@@ -129,7 +129,7 @@ def read_motion_model(config: dict) -> MotionModel:
     Notes
     -----
     Motion models can be described using JSON format, with a basic structure
-    as follows:
+    as follows::
 
         {
           "MotionModel":{
@@ -216,7 +216,7 @@ def read_object_model(config: dict) -> ObjectModel:
     Notes
     -----
     Object models can be described using JSON format, with a basic structure
-    as follows:
+    as follows::
 
         {
           "ObjectModel":{

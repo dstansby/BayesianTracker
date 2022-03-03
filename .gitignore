@@ -15,3 +15,5 @@ bworker.py
 *.DS_store
 *.o
 *.pyc
+
+docs/api/*
