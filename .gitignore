@@ -65,3 +65,4 @@ sdist
 target
 var
 _version.py
+.mesonpy*

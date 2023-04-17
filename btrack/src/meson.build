@@ -15,11 +15,11 @@ src = [
     'tracklet.cc',
     'wrapper.cc',
 ]
-executable(
-    'tracker',
+library(
+    'libtracker',
     src,
     include_directories: incdir,
     dependencies: eigen,
     native: true,
-
+    install: true,
 )

@@ -1,6 +1,7 @@
 [build-system]
 build-backend = 'mesonpy'
-requires = ['meson-python']
+requires = ['git+https://github.com/mesonbuild/meson-python@eacd23a31bf95036851ff3f3b6b7905ed1577394']
+version = '0.0.1'
 
 [project]
 authors = [
@@ -20,9 +21,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 description = "A framework for Bayesian multi-object tracking"
-dynamic = [
-    "version",
-]
+
 dependencies = [
     "cvxopt>=1.2.0",
     "h5py>=2.10.0",
