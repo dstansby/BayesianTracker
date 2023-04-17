@@ -19,7 +19,8 @@
 
 #include <vector>
 
-#include "eigen/Eigen/Dense"
+#include <Eigen/Dense>
+
 #include "types.h"
 
 #define RESERVE_STATE_SEQUENCE 1000

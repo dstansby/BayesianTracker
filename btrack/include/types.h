@@ -22,8 +22,9 @@
 #include <memory>
 #include <vector>
 
+#include <Eigen/Dense>
+
 #include "defs.h"
-#include "eigen/Eigen/Dense"
 
 // Python structure for external interface
 extern "C" struct PyTrackObject {

@@ -19,8 +19,9 @@
 
 #include <vector>
 
+#include <Eigen/Dense>
+
 #include "defs.h"
-#include "eigen/Eigen/Dense"
 #include "inference.h"
 #include "motion.h"
 #include "types.h"

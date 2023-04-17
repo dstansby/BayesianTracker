@@ -21,8 +21,9 @@
 #include <iostream>
 #include <vector>
 
+#include <Eigen/Dense>
+
 #include "defs.h"
-#include "eigen/Eigen/Dense"
 #include "tracklet.h"
 #include "types.h"
 

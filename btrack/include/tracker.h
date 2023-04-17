@@ -28,9 +28,10 @@
 #include <set>
 #include <vector>
 
+#include <Eigen/Dense>
+
 #include "bayes.h"
 #include "defs.h"
-#include "eigen/Eigen/Dense"
 #include "hyperbin.h"
 #include "inference.h"
 #include "manager.h"

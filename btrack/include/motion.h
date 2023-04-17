@@ -25,7 +25,8 @@
 #include <set>
 #include <vector>
 
-#include "eigen/Eigen/Dense"
+#include <Eigen/Dense>
+
 #include "types.h"
 
 // Implements a Kalman filter for motion modelling in the tracker. Note that we
