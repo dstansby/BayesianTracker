@@ -1,7 +1,6 @@
 add_project_arguments('-std=c++17', language: 'cpp', native: true)
 add_project_arguments('-mmacosx-version-min=10.15', language: 'cpp', native: true)
 
-eigen = dependency('eigen3')
 incdir = include_directories('../include')
 src = [
     'bayes.cc',
