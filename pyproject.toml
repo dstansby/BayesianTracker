@@ -1,6 +1,6 @@
 [build-system]
 build-backend = 'mesonpy'
-requires = ['git+https://github.com/mesonbuild/meson-python@eacd23a31bf95036851ff3f3b6b7905ed1577394']
+requires = ['meson-python']
 version = '0.0.1'
 
 [project]
