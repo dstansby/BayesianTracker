@@ -86,7 +86,7 @@ archs = ["native"]
 build = ["cp39-*", "cp310-*", "cp311-*"]
 
 [tool.cibuildwheel.linux]
-before-test = "yum install fontconfig"
+before-test = "yum install fontconfig -y"
 
 [tool.black]
 exclude = '''
