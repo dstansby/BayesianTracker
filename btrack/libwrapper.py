@@ -94,8 +94,12 @@ def get_library():  # noqa: PLR0915
     """Loads and returns the btrack shared library."""
     lib = load_library(
         str(
-            Path(BTRACK_PATH).parent / ".btrack.mesonpy.libs" / "liblibtracker"
-        ).resolve()
+            (
+                Path(BTRACK_PATH).parent
+                / ".btrack.mesonpy.libs"
+                / "liblibtracker"
+            ).resolve()
+        )
     )
 
     # deal with constructors/destructors
