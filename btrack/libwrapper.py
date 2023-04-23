@@ -91,7 +91,7 @@ def load_library(filename):
 
 def get_library():  # noqa: PLR0915
     """Loads and returns the btrack shared library."""
-    lib = load_library(os.path.join(BTRACK_PATH, "libs", "libtracker"))
+    lib = load_library(os.path.join(BTRACK_PATH, "..", ".btrack.mesonpy.libs", "liblibtracker"))
 
     # deal with constructors/destructors
     lib.new_interface.restype = ctypes.c_void_p
