@@ -45,6 +45,17 @@ optional-dependencies.docs = [
     "sphinx-panels",
     "sphinx",
 ]
+optional-dependencies.test = [
+    "dask",
+    "magicgui",
+    "napari",
+    "pyqt5",
+    "pytest",
+    "pytest-cov",
+    "pytest-qt",
+    "pytest-xvfb ; sys_platform == 'linux'",
+    "qtpy",
+]
 optional-dependencies.napari = [
     "magicgui>=0.5.0",
     "napari-plugin-engine>=0.1.4",
@@ -69,6 +80,7 @@ urls.homepage = "https://github.com/quantumjot/btrack"
 urls.usersupport = "https://github.com/quantumjot/btrack/discussions"
 
 [tool.cibuildwheel]
+test-extras = ["test"]
 test-command = "pytest {package}"
 archs = ["native"]
 build = ["cp39-*", "cp310-*", "cp311-*"]
@@ -187,16 +199,8 @@ python =
     3.10: py310
 
 [testenv]
-deps =
-    dask
-    magicgui
-    napari
-    pyqt5
-    pytest
-    pytest-cov
-    pytest-qt
-    pytest-xvfb ; sys_platform == 'linux'
-    qtpy
+extras =
+    test
 conda_deps =
     # Use conda to install cvxopt so tests work on macOS
     cvxopt
