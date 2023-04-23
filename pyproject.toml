@@ -68,6 +68,11 @@ urls.documentation = "https://btrack.readthedocs.io"
 urls.homepage = "https://github.com/quantumjot/btrack"
 urls.usersupport = "https://github.com/quantumjot/btrack/discussions"
 
+[tool.cibuildwheel]
+test-command = "pytest {package}"
+archs = ["native"]
+build = ["cp39-*", "cp310-*", "cp311-*"]
+
 [tool.black]
 exclude = '''
 (
