@@ -1,12 +1,15 @@
-# py.install_sources(
-#  ['src/libtracker'],
-#  pure: false,
-#  subdir: 'btrack/libs'  # Folder relative to site-packages to install to
-#)
-
-
 python_sources = [
   '__init__.py',
+  '_version.py',
+  'btypes.py',
+  'config.py',
+  'constants.py',
+  'core.py',
+  'dataio.py',
+  'datasets.py',
+  'libwrapper.py',
+  'models.py',
+  'utils.py',
 ]
 
 py.install_sources(
@@ -15,4 +18,6 @@ py.install_sources(
   subdir: 'btrack'
 )
 
+subdir('io')
+subdir('optimise')
 subdir('src')
